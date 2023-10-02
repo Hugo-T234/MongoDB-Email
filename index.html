@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MongoDB Newsletter Email</title>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
     body {
         margin: 0;
         padding: 0;
@@ -18,14 +19,30 @@
         width: 100%;
         max-width: 600px;
         background-color: #001E2B;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    td {
+        padding: 0 50px;
     }
     .banner {
         background-image: url(assets/top-right.png);
         background-size: cover;
         height: 160px;
-    }
-    td {
+        text-align: left;
         padding-left: 30px;
+    }
+    .header {
+        font-size: 33px;
+        line-height: 40.8px;
+    }
+    .main a {
+        color: black;
+        background-color: #00ED64;
+        padding: 20px 25px;
+        border-radius: 5px;
+        text-align: center;
+        position:relative;
     }
 </style>
 </head>
@@ -38,10 +55,24 @@
 <!-- Logo -->
 
             <tr>
-                <td class="banner"><img src="assets/Mongodb-logo.png" alt="wave background image" height="30px"></td>
+                <th class="banner"><img src="assets/Mongodb-logo.png" alt="wave background image" height="30px"></th>
             </tr>
 
 <!-- Header -->
+
+            <tr>
+                <td class="header">Connect MongoDB with other parts of your stack like Vercel, Datadog, and more</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Hey Hugo,</p>
+                    <p>MongoDB Atlas provides integrations to enable seamless connectivity with the tool sof your choice, so you can focus on building your app with the technology stack that suits your needs.</p>
+                    <div style="text-align: center; padding: 35px 0;"></divstyle>
+                        <a href="https://cloud.mongodb.com/ecosystem/integrations?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795578">Explore Integrations</a>
+                    </div>
+                    <p>Check out some of our integrations below:</p>
+                </td>
+            </tr>
 
 <!-- Email Body -->
 
