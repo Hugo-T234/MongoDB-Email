@@ -38,13 +38,44 @@
         padding: 15px 0 10px 0;
         font-weight: normal;
     }
-    .main a {
+    h2 {
+        color: #00ed64;
+        font-size: 22px;
+        line-height: 26.4px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    p {
+        line-height: 19.2px;
+    }
+    .button {
+        margin-bottom: 20px;
+    }
+    .button a {
         color: black;
         background-color: #00ED64;
         padding: 20px 25px;
         border-radius: 5px;
         text-align: center;
         text-decoration: none;
+    }
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .accent-text {
+        color: #00ED64;
+    }
+    .accent-link {
+        color: #00ED64;
+        text-decoration: underline;
+    }
+    .resource-list td:nth-child(1) {
+        width: 25%;
+    }
+    .resource-list td {
+        vertical-align: top;
+        padding: 0 0 50px 0;
     }
 </style>
 </head>
@@ -75,7 +106,7 @@
                     <p>Hey Hugo,</p>
                     <p>Building a new app can be tricky, even under ideal conditions. To ensure that your application development and launch process goes smoothly, check out the following resources.</p>
                     <p>You can sharpen your MongoDB skills, engage with our diverse user base, and get answers to pressing questions.</p>
-                    <div style="text-align: center; padding: 35px 0;"></divstyle>
+                    <div class="button" style="text-align: center; padding: 35px 0;">
                         <a href="https://www.mongodb.com/resources?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">Go to MongoDB Resource Library</a>
                     </div>
                 </td>
@@ -85,12 +116,58 @@
 
             <tr>
                 <td>
-                    <table>
+                    <table  class="resource-list" width="100%">
                         <tr>
-                            <td><img src="assets/" alt=""></td>
+                            <td>
+                                <img src="assets/tutorial-icon.png" alt="" width="100px">
+                            </td>
+                            <td>
+                                <h2>Tutorials</h2>
+                                <p>These practical, hands-on walkthroughs cover a wide range of scenarios, from optimizing search indexes with analyzers to using Atlas App Services with GraphQL.</p>
+                                <a href="https://www.mongodb.com/developer/tutorials/?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">View Tutorials <span class="accent-text">></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="assets/community-icon.png" alt="" width="100px">
+                            </td>
+                            <td>
+                                <h2>Community Forums</h2>
+                                <p>By choosing Atlas, you're joining a global developer community. Join <a class="accent-link" href="https://www.mongodb.com/community/forums/c/user-groups/11?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">a local user group</a> for in-person meetings, or post questions in the <a class="accent-link" href="https://www.mongodb.com/community/forums/c/data/6?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">Working with Data</a> channel.</p>
+                                <a href="https://www.mongodb.com/community/forums/?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">Join The Forums ><span class="accent-text">></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="assets/chat-icon.png" alt="" width="100px">
+                            </td>
+                            <td>
+                                <h2>Chat Support</h2>
+                                <p>If you're locked out of a project, need security advice, or want more information about upgrading your cluster, open a chat with your friendly support team.</p>
+                                <a href="https://www.mongodb.com/docs/atlas/support/?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">Get Help ><span class="accent-text">></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="assets/other-icon.png" alt="" width="100px">
+                            </td>
+                            <td>
+                                <h2>Other Support Plans</h2>
+                                <p>Every Atlas has access to free, Basic support.</p>
+                                <p>However, if you need faster response times and additional security feature, we have a plan for you.</p>
+                                <a href="https://www.mongodb.com/cloud/atlas/pricing/support-subscriptions?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">See Plans <span class="accent-text">></span></a>
+                            </td>
                         </tr>
                     </table>
+                    <div class="button" style="text-align: center; padding: 35px 0;">
+                        <a href="">Go to MongoDB Resource Library</a>
+                    </div>
+                    <p>Lastly, consider third-party forums like Stack OVerflow. Although broader in scope, Stack Overflow does contain useful information on topics such as analyzers, <a class="accent-link" href="https://stackoverflow.com/questions/73851363/why-cant-i-use-a-variable-for-pipeline-in-a-lookup-in-an-aggregation?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">aggregations</a>, <a class="accent-link" href="https://stackoverflow.com/questions/68958221/mongoparseerror-options-usecreateindex-usefindandmodify-are-not-supported?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_5795551">common errors</a>, and more.</p>
+                    <p style="padding-top: 20px;">Good luck and happy building! <br> The MongoDB Team</p>
                 </td>
+            </tr>
+            <tr>
+                <td style="padding: 30px 20px 0 20px"><hr></td>
             </tr>
 
 <!-- Footer -->
